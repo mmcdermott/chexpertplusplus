@@ -6,9 +6,16 @@ approximation to CheXpert for radiology report labeling. Note that a compelling,
 more robust error resolution system. This paper is accessible [here](://arxiv.org/pdf/2004.09167.pdf).
 
 ## Obtaining our Pre-trained Model
-Our Pre-trained BERT model is soon to be available via PhysioNet. In the meantime, please email
-[`mmd@mit.edu`](mailto:mmd@mit.edu) to request the pre-trained model, and be prepared to provide verification
-that you have authorization to access MIMIC-CXR.
+Our Pre-trained BERT model is soon to be available via PhysioNet. In the meantime, it is accessible on google cloud platform (GCP) to users who are credentialed for accessing the MIMIC-CXR GCP bucket via PhysioNet. Our bucket link and instructions to gain access through PhysioNet are included below, and please email
+[`mmd@mit.edu`](mailto:mmd@mit.edu) if you have any questions.
+
+### Our Bucket
+https://console.cloud.google.com/storage/browser/chexpertplusplus
+
+### Instructions for getting physionet MIMIC-CXR GCP Access
+  1. First, follow the physionet instructions to add google cloud access, here: https://mimic.physionet.org/gettingstarted/cloud/Next, 
+  2. Next, get access to MIMIC-CXR in general on Physionet: https://physionet.org/content/mimic-cxr/2.0.0/ (go to the bottom of the page and follow the steps listed under "Files", including becoming a credentialed user and signing the data use agreement)
+  3. Finally, request access to MIMIC-CXR via GCP on Physionet: https://physionet.org/projects/mimic-cxr/2.0.0/request_access/3 
 
 ## Installation
 To install a conda environment suitable for reproducing this work, use the environment spec available in
